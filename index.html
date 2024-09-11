@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt Sklepu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Mój Sklep</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-menu"
+            aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mobile-menu">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <!-- Menu drugiego poziomu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Produkty</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Produkty A</a>
+                        <a class="dropdown-item" href="#">Produkty B</a>
+                        <a class="dropdown-item" href="#">Produkty C</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kontakt</a>
+                </li>
+            </ul>
+            <!-- Przyciski z prawej strony -->
+            <div class="btn-group ms-auto" role="group" aria-label="Button group">
+                <button type="button" class="btn btn-secondary">
+                    <i class="fas fa-shopping-cart"></i> Cart
+                </button>
+                <button type="button" class="btn btn-secondary">
+                    <i class="fas fa-user"></i> Account
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div id="main-slider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://i.postimg.cc/NfVBdny0/pexels-sheng-ye-1095146367-26741437.jpg" class="d-block w-100" alt="Slajd 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Slajd 1</h3>
+                    <h4>Opis pierwszego slajdu</h4>
+                    <a href="#" class="btn btn-primary">Dowiedz się więcej</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.postimg.cc/0jyP4Rdz/pexels-angeloduranti-2403203.jpg" class="d-block w-100" alt="Slajd 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Slajd 2</h3>
+                    <h4>Opis drugiego slajdu</h4>
+                    <a href="#" class="btn btn-primary">Dowiedz się więcej</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.postimg.cc/4dbxMQDS/pexels-stephanie-gray-1550812693-27990629.jpg" class="d-block w-100" alt="Slajd 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Slajd 3</h3>
+                    <h4>Opis trzeciego slajdu</h4>
+                    <a href="#" class="btn btn-primary">Dowiedz się więcej</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#main-slider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#main-slider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <section class="products py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Kolumna 1: Lista marek -->
+                <div class="col-lg-3">
+                    <h4>Marki</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">Marka 1</li>
+                        <li class="list-group-item">Marka 2</li>
+                        <li class="list-group-item">Marka 3</li>
+                        <li class="list-group-item">Marka 4</li>
+                    </ul>
+                </div>
+                <!-- Kolumna 2: Produkty -->
+                <div class="col-lg-9">
+                    <h4>Nasze produkty</h4>
+                    <div class="row">
+                        <!-- Produkt 1 -->
+                        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                            <div class="card">
+                                <img src="https://i.postimg.cc/zfYH371x/pexels-chris-f-38966-27367125.jpg" class="card-img-top" alt="Produkt 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Produkt 1</h5>
+                                    <p class="card-text">Opis produktu 1.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Produkt 2 -->
+                        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                            <div class="card">
+                                <img src="https://i.postimg.cc/8PF7H9py/pexels-shvets-production-8005153.jpg" class="card-img-top" alt="Produkt 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Produkt 2</h5>
+                                    <p class="card-text">Opis produktu 2.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Produkt 3 -->
+                        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                            <div class="card">
+                                <img src="https://i.postimg.cc/85KCdBqQ/pexels-jay-ybarra-1587808679-27383302.jpg" class="card-img-top" alt="Produkt 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Produkt 3</h5>
+                                    <p class="card-text">Opis produktu 3.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+<!-- Sekcja z trzema kafelkami w dwóch rzędach -->
+
+<section class="kafelki py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Pierwsza kolumna -->
+            <div class="col-md-6 mb-3">
+                <div class="card h-100 position-relative">
+                    <img src="https://i.postimg.cc/NfWk71cH/pexels-furkanelveren-26955061.jpg" class="card-img-top" alt="Kafelek 1">
+                    <div class="card-body position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center text-white">
+                        <div>
+                            <h5 class="card-title">Kafelek 1</h5>
+                            <a href="#" class="btn btn-primary">Więcej</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Druga kolumna -->
+            <div class="col-md-6 mb-3">
+                <div class="card h-100 position-relative">
+                    <img src="https://i.postimg.cc/QtyTN3NT/pexels-matreding-17719773.jpg" class="card-img-top" alt="Kafelek 2">
+                    <div class="card-body position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center text-white">
+                        <div>
+                            <h5 class="card-title">Kafelek 2</h5>
+                            <a href="#" class="btn btn-primary">Więcej</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Trzecia kolumna -->
+            <div class="col-12 mb-3">
+                <div class="card h-100 position-relative">
+                    <img src="https://i.postimg.cc/pT4JG8F4/pexels-tahmetler-15442329.jpg" class="card-img-top" alt="Kafelek 3">
+                    <div class="card-body position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center text-white">
+                        <div>
+                            <h5 class="card-title">Kafelek 3</h5>
+                            <a href="#" class="btn btn-primary">Więcej</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sekcja: karty z dwiema kolumnami -->
+<section class="karty-dwie-kolumny py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Pierwsza karta -->
+            <div class="col-md-4 mb-3">
+                <div class="card p-3">
+                    <div class="row no-gutters">
+                        <!-- Kolumna z ikoną -->
+                        <div class="col-md-2 d-none d-md-flex align-items-center justify-content-center">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <!-- Kolumna z treścią -->
+                        <div class="col-md-10">
+                            <div class="card-body">
+                                <h3 class="card-title">Szybka dostawa</h3>
+                                <p class="card-text">Zapewniamy ekspresową dostawę wszystkich naszych produktów.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Druga karta -->
+            <div class="col-md-4 mb-3">
+                <div class="card p-3">
+                    <div class="row no-gutters">
+                        <!-- Kolumna z ikoną -->
+                        <div class="col-md-2 d-none d-md-flex align-items-center justify-content-center">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <!-- Kolumna z treścią -->
+                        <div class="col-md-10">
+                            <div class="card-body">
+                                <h3 class="card-title">Atrakcyjne ceny</h3>
+                                <p class="card-text">Oferujemy konkurencyjne ceny na wszystkie nasze produkty.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Trzecia karta -->
+            <div class="col-md-4 mb-3">
+                <div class="card p-3">
+                    <div class="row no-gutters">
+                        <!-- Kolumna z ikoną -->
+                        <div class="col-md-2 d-none d-md-flex align-items-center justify-content-center">
+                            <i class="fas fa-life-ring"></i>
+                        </div>
+                        <!-- Kolumna z treścią -->
+                        <div class="col-md-10">
+                            <div class="card-body">
+                                <h3 class="card-title">Wsparcie 24/7</h3>
+                                <p class="card-text">Nasz zespół wsparcia jest dostępny przez całą dobę, aby Ci pomóc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <!-- Kolumna 1 -->
+            <div class="col-12 col-md-4 order-2 order-md-1 mb-3 mb-md-0">
+                <div class="card p-3">
+                    <h5 class="card-title">Newsletter</h5>
+                    <form>
+                        <div class="mb-3">
+                            <label for="newsletterEmail" class="form-label">Adres e-mail</label>
+                            <input type="email" class="form-control" id="newsletterEmail" placeholder="Wpisz swój e-mail">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subskrybuj</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Kolumna 2 -->
+            <div class="col-12 col-md-4 order-1 order-md-2 mb-3 mb-md-0">
+                <div class="card p-3">
+                    <h5 class="card-title">Social Media</h5>
+                    <ul class="list-unstyled d-flex">
+                        <li class="me-3"><a href="#" class="text-decoration-none"><i class="fab fa-facebook-f" style="font-size: 16px;"></i></a></li>
+                        <li class="me-3"><a href="#" class="text-decoration-none"><i class="fab fa-twitter" style="font-size: 16px;"></i></a></li>
+                        <li class="me-3"><a href="#" class="text-decoration-none"><i class="fab fa-instagram" style="font-size: 16px;"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Kolumna 3 -->
+            <div class="col-12 col-md-4 order-3 mb-3 mb-md-0">
+                <div class="card p-3">
+                    <h5 class="card-title">Kontakt</h5>
+                    <p class="card-text">Skontaktuj się z nami, jeśli masz jakiekolwiek pytania.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sekcja: Stopka -->
+<footer class="py-3" style="background-color: #d9e3e9;">
+    <div class="container">
+        <div class="row d-flex align-items-center justify-content-between">
+            <!-- Kolumna 1: Copyright -->
+            <div class="col-md-6 text-start">
+                <p class="mb-0">&copy; Harbinger Ltd.</p>
+            </div>
+
+            <!-- Kolumna 2: Lista linków -->
+            <div class="col-md-6 text-end">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a href="#">About</a></li>
+                    <li class="list-inline-item"><a href="#">Delivery</a></li>
+                    <li class="list-inline-item"><a href="#">Returns</a></li>
+                    <li class="list-inline-item"><a href="#">Privacy policy</a></li>
+                    <li class="list-inline-item"><a href="#">Terms and conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Zawartość strony -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        
+</body>
+
+</html>

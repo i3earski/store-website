@@ -1,0 +1,87 @@
+.carousel-inner,
+.carousel-item {
+    height: 100vh; /* Pełna wysokość okna przeglądarki */
+}
+
+.carousel-item img {
+    height: 100%; /* Dopasowanie wysokości obrazu do slajdu */
+    object-fit: cover; /* Przycinanie obrazu tak, aby wypełnił slajd */
+}
+
+// Tło sekcji
+section.bg-light {
+    background-color: #eff2f5 !important;
+    padding: 2rem !important; // Bootstrap padding dla całej sekcji
+}
+
+// Style dla kart
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #eff2f5 !important; // Tło karty
+    background-clip: border-box;
+    border: 1px solid #eff2f5 !important; // Opcjonalny border
+    border-radius: .25rem !important; // Zaokrąglenie rogów
+}
+
+// Tło dla obszaru karty
+.card-body {
+    background-color: #eff2f5; // Tło card-body
+    padding: 1.5rem; // Padding wewnętrzny card-body
+}
+
+// Styl dla tytułu kart
+.card-title {
+    font-size: 1.25rem;
+    background-color: #eff2f5; // Tło tytułu karty (jeśli chcesz, aby było to samo co tło karty)
+}
+
+// Style dla ikon social media
+.list-unstyled {
+    padding-left: 0;
+    background-color: #eff2f5; // Tło dla listy social media
+}
+
+.list-unstyled li {
+    padding-top: 0.5rem;
+}
+
+.list-unstyled i {
+    font-size: 18px;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    color: #007bff;
+}
+
+footer {
+    background-color: #d9e3e9; /* Kolor tła stopki */
+    padding: 10px 0;
+    
+    .row {
+        display: flex;
+        align-items: center; /* Wyrównanie pionowe do środka */
+        justify-content: space-between; /* Rozmieszczenie elementów po bokach */
+        height: 100%; /* Sprawia, że elementy wypełniają całą wysokość */
+    }
+
+    p {
+        color: #6c757d; /* Kolor tekstu */
+        margin-bottom: 0;
+    }
+
+    ul {
+        margin-bottom: 0;
+    }
+
+    a {
+        color: #007bff; /* Kolor linków (niebieski) */
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline; /* Podkreślenie przy najechaniu */
+        }
+    }
+}
